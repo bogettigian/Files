@@ -1,0 +1,23 @@
+Android Studio
+Clion
+Idea
+PyCharm
+Rider
+RubyMine
+WebStorm
+Unity
+--Calibre
+--Chrome
+Jdownloader
+Rstudio
+--Atom
+--Spotify
+
+--Inkscape
+--Gimp
+--Skype
+--Steam
+--OpenOffice
+--TexMaker
+--VLC
+

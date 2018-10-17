@@ -1,0 +1,6 @@
+Compilar:
+g++ -std=c++11 -D_GLIBCXX_DEBUG -g <archivos.cpp>
+Valgrind(MemoryLeaks):
+valgrind --leak-check=full -v ./<Ejecutable>
+Compilar+testGoogle:
+g++ -std=c++11 -D_GLIBCXX_DEBUG -g <archivos.cpp> -lgtest -lgtest_main -lpthread
